@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.animated-section {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.animated-section:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Keyframe animation for the sections */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animated-section:nth-child(odd) {
+    animation: slideIn 0.8s forwards;
+}
+
+.animated-section:nth-child(even) {
+    animation: slideIn 0.8s forwards;
+    animation-delay: 0.2s;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Website with Animations</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to PS-6 Dynamic Website</h1>
+    </header>
+    <main>
+        <section class="animated-section">
+            <h2>Professional Elective Seminar on 13/10</h2>
+            <p>This section has a simple animation.</p>
+        </section>
+        <section class="animated-section">
+            <h2>All Must Attend it</h2>
+            <p>This section also has an animation.</p>
+        </section>
+    </main>
+</body>
+</html>

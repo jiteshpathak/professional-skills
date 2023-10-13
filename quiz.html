@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .question-container {
+            margin-top: 20px;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .option {
+            font-size: 18px;
+            padding: 10px;
+            margin: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #444;
+        }
+
+        .result-container {
+            margin-top: 20px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Game</h1>
+        <div class="question-container">
+            <p id="question">Question goes here.</p>
+        </div>
+        <div class="options-container">
+            <button id="option1" class="option">Option 1</button>
+            <button id="option2" class="option">Option 2</button>
+            <button id="option3" class="option">Option 3</button>
+            <button id="option4" class="option">Option 4</button>
+        </div>
+        <div class="result-container">
+            <p id="result">Your result will be displayed here.</p>
+        </div>
+    </div>
+    <script src="script7.js"></script>
+</body>
+
+</html>
